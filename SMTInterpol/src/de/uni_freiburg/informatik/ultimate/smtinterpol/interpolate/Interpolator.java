@@ -714,6 +714,39 @@ public class Interpolator extends NonRecursive {
 		occ.occursIn(part);
 	}
 
+	// TODO:
+	Occurrence getOccurrenceOfUnknownTerm(final Term term) {
+		Occurrence result = mFullOccurrence;
+
+		HashSet<String> symbols = getSymbols(term);
+		for (String s : symbols) {
+			if (!mSymbolOccurrenceInfos.containsKey(s)) {
+				// If symbol is unknown, set symbol occurrence to root partition.
+				mSymbolOccurrenceInfos.put(s, new Occurrence());
+			}
+			result = result.intersect(mSymbolOccurrenceInfos.get(s));
+		}
+
+		BitSet mixed = new BitSet(mPartitions.size());
+		for (int part = 0; part < mPartitions.size(); part++) {
+			// For a mixed term, set occurrence to the occurrence from the outermost
+			// function symbol.
+			if (result.isMixed(part)) {
+				Occurrence purOcc = mSymbolOccurrenceInfos.get(((ApplicationTerm) term).getFunction().getName());
+				if (purOcc.mInA.get(part)) {
+					result.mInA.set(part);
+				}
+				if (purOcc.mInB.get(part)) {
+					result.mInB.set(part);
+				}
+				mixed.set(part);
+			}
+		}
+		result.mContainsMixedTerm = mixed;
+
+		return result;
+	}
+
 	HashSet<Term> getSubTerms(final Term literal) {
 		final HashSet<Term> subTerms = new HashSet<>();
 		final ArrayDeque<Term> todo = new ArrayDeque<Term>();
