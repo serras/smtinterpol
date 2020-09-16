@@ -789,55 +789,6 @@ public class Interpolator extends NonRecursive {
 		return subTerms;
 	}
 
-	// Collect all subterms in a literal. This function ignores annotations while
-	// looking for subterms.
-	HashSet<Term> getAllSubTerms(final Term literal) {
-		final HashSet<Term> subTerms = new HashSet<>();
-		final ArrayDeque<Term> todo = new ArrayDeque<Term>();
-
-		todo.addLast(literal);
-		while (!todo.isEmpty()) {
-			final Term term = todo.removeLast();
-			if (term instanceof ApplicationTerm) {
-				final ApplicationTerm appTerm = (ApplicationTerm) term;
-				if (!appTerm.getFunction().equals(mTheory.mNot)) {
-					subTerms.add(appTerm);
-				}
-				for (final Term sub : appTerm.getParameters()) {
-					todo.addLast(sub);
-				}
-			}
-			if (term instanceof AnnotatedTerm) {
-				todo.add(((AnnotatedTerm) term).getSubterm());
-			}
-		}
-		return subTerms;
-	}
-
-	// TODO:
-	HashSet<Term> getTermVariables(final Term literal) {
-		final HashSet<Term> vars = new HashSet<>();
-		final ArrayDeque<Term> todo = new ArrayDeque<Term>();
-
-		todo.addLast(literal);
-		while (!todo.isEmpty()) {
-			final Term term = todo.removeLast();
-			if (term instanceof ApplicationTerm) {
-				final ApplicationTerm appTerm = (ApplicationTerm) term;
-				for (final Term at : appTerm.getParameters()) {
-					todo.addLast(at);
-				}
-			}
-			if (term instanceof AnnotatedTerm) {
-				todo.add(((AnnotatedTerm) term).getSubterm());
-			}
-			if (term instanceof TermVariable) {
-				vars.add(term);
-			}
-		}
-		return vars;
-	}
-
 	LitInfo getAtomOccurenceInfo(final Term atom) {
 		assert !isNegatedTerm(atom);
 		LitInfo result = mAtomOccurenceInfos.get(atom);
@@ -923,14 +874,11 @@ public class Interpolator extends NonRecursive {
 		inA.set(0, mNumInterpolants + 1);
 		final BitSet inB = new BitSet(mNumInterpolants + 1);
 		inB.set(0, mNumInterpolants);
-		final BitSet containsMixedTerm = new BitSet(mNumInterpolants + 1);
 		for (final Term st : subterms) {
 			final Occurrence occInfo = getOccurrence(st);
 			inA.and(occInfo.mInA);
 			inB.and(occInfo.mInB);
-			containsMixedTerm.or(occInfo.mContainsMixedTerm);
 		}
-		info = new LitInfo(inA, inB, containsMixedTerm);
 		return info;
 	}
 
@@ -1073,52 +1021,6 @@ public class Interpolator extends NonRecursive {
 				}
 			}
 			super.convert(term);
-		}
-	}
-
-	/**
-	 * This term transformer substitutes a given term by another term. It is used to
-	 * remove non-shared symbols from a provisional interpolant.
-	 */
-	class TermSubstitutor extends TermTransformer {
-		Term mTerm;
-		Term mReplacement;
-
-		TermSubstitutor(final Term term, final Term replacement) {
-			mTerm = term;
-			mReplacement = replacement;
-		}
-
-		@Override
-		public void convert(final Term oldTerm) {
-			assert oldTerm != mReplacement;
-
-			if (oldTerm == mTerm) {
-				setResult(mReplacement);
-			} else if (oldTerm instanceof ApplicationTerm) {
-				final Term[] oldParams = ((ApplicationTerm) oldTerm).getParameters();
-				enqueueWalker(new Walker() {
-					@Override
-					public void walk(final NonRecursive engine) {
-						final TermSubstitutor ts = (TermSubstitutor) engine;
-						final String funName = ((ApplicationTerm) oldTerm).getFunction().getName();
-						final Term[] newParams = ts.getConverted(oldParams);
-
-						if (newParams == oldParams) {
-							// Nothing changed.
-							ts.setResult(oldTerm);
-							return;
-						}
-						// Create a new Term from newParams and the function symbol
-						final Term newTerm = mTheory.term(funName, newParams);
-						ts.setResult(newTerm);
-					}
-				});
-				pushTerms(oldParams);
-				return;
-			} else {
-				super.convert(oldTerm);
-			}
 		}
 	}
 
