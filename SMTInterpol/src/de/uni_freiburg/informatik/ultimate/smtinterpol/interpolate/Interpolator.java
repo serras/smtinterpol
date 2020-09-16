@@ -33,6 +33,7 @@ import de.uni_freiburg.informatik.ultimate.logic.ApplicationTerm;
 import de.uni_freiburg.informatik.ultimate.logic.ConstantTerm;
 import de.uni_freiburg.informatik.ultimate.logic.FunctionSymbol;
 import de.uni_freiburg.informatik.ultimate.logic.NonRecursive;
+import de.uni_freiburg.informatik.ultimate.logic.QuantifiedFormula;
 import de.uni_freiburg.informatik.ultimate.logic.Rational;
 import de.uni_freiburg.informatik.ultimate.logic.SMTLIBException;
 import de.uni_freiburg.informatik.ultimate.logic.Script;
@@ -1253,6 +1254,42 @@ public class Interpolator extends NonRecursive {
 			unquoted = mTheory.term("not", unquoted);
 		}
 		return unquoted;
+	}
+
+	/**
+	 * Collect all non-logical symbols in a term.
+	 */
+	public HashSet<String> getSymbols(final Term term) {
+		assert term != null;
+
+		final HashSet<String> result = new HashSet<String>();
+		final Deque<Term> todoStack = new ArrayDeque<>();
+
+		todoStack.add(unquote(term));
+
+		while (!todoStack.isEmpty()) {
+			Term t = todoStack.pop();
+			if (t instanceof TermVariable || t instanceof ConstantTerm) {
+				continue;
+			}
+			if (t instanceof QuantifiedFormula) {
+				t = unquote(((QuantifiedFormula) t).getSubformula());
+			}
+			ApplicationTerm at = (ApplicationTerm) t;
+
+			FunctionSymbol funSymbol = at.getFunction();
+			String symbol = funSymbol.getName();
+			Term[] params = at.getParameters();
+
+			for (int i = 0; i < params.length; i++) {
+				todoStack.add(params[i]);
+			}
+			// Add symbol if it is not an internal symbol
+			if (!funSymbol.isIntern()) {
+				result.add(symbol);
+			}
+		}
+		return result;
 	}
 
 	public boolean isNegatedTerm(final Term literal) {
