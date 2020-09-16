@@ -680,7 +680,8 @@ public class Interpolator extends NonRecursive {
 					result = result.intersect(occ);
 				}
 			} else {
-				result = new Occurrence();
+				// Compute occurrence of unknown term.
+				result = getOccurrenceOfUnknownTerm(term);
 			}
 			mSymbolPartition.put(term, result);
 		}
@@ -709,12 +710,13 @@ public class Interpolator extends NonRecursive {
 		}
 		/* Create occurrence if it is *not* an internal function and if it does not exists yet */
 		if (occ == null) {
-			occ = getOccurrence(term);
+			occ = new Occurrence();
+			mSymbolPartition.put(term, occ);
 		}
 		occ.occursIn(part);
 	}
 
-	// TODO:
+	// Compute the occurrence of a term seen for the first time.
 	Occurrence getOccurrenceOfUnknownTerm(final Term term) {
 		Occurrence result = mFullOccurrence;
 
