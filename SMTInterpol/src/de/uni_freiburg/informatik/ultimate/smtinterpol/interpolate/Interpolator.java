@@ -879,6 +879,7 @@ public class Interpolator extends NonRecursive {
 			inA.and(occInfo.mInA);
 			inB.and(occInfo.mInB);
 		}
+		info = new LitInfo(inA, inB, containsMixedTerm);
 		return info;
 	}
 
