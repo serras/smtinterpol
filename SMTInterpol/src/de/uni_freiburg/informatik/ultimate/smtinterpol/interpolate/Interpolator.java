@@ -301,6 +301,8 @@ public class Interpolator extends NonRecursive {
 			} else if (leafTermInfo.getLemmaType().equals(":CC")) {
 				final CCInterpolator ipolator = new CCInterpolator(this);
 				interpolants = ipolator.computeInterpolants(leaf);
+				// Replace non-shared symbols in interpolant.
+				interpolants = replaceNonsharedSymbols(interpolants);
 			} else if (leafTermInfo.getLemmaType().equals(":LA")) {
 				final LAInterpolator ipolator = new LAInterpolator(this);
 				interpolants = ipolator.computeInterpolants(leaf);
