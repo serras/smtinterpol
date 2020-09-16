@@ -433,16 +433,24 @@ public class Interpolator extends NonRecursive {
 	class Occurrence {
 		BitSet mInA;
 		BitSet mInB;
+		BitSet mContainsMixedTerm;
 
 		public Occurrence() {
 			mInA = new BitSet(mNumInterpolants + 1);
 			mInA.set(mNumInterpolants);
 			mInB = new BitSet(mNumInterpolants + 1);
+			mContainsMixedTerm = new BitSet(mNumInterpolants + 1);
 		}
 
 		public Occurrence(final BitSet inA, final BitSet inB) {
 			mInA = inA;
 			mInB = inB;
+		}
+
+		public Occurrence(final BitSet inA, final BitSet inB, final BitSet containsMixedTerm) {
+			mInA = inA;
+			mInB = inB;
+			mContainsMixedTerm = containsMixedTerm;
 		}
 
 		public void occursIn(final int partition) {
@@ -566,6 +574,10 @@ public class Interpolator extends NonRecursive {
 
 		public LitInfo(final BitSet inA, final BitSet inB) {
 			super(inA, inB);
+		}
+
+		public LitInfo(final BitSet inA, final BitSet inB, final BitSet containsMixedTerm) {
+			super(inA, inB, containsMixedTerm);
 		}
 
 		public TermVariable getMixedVar() {
