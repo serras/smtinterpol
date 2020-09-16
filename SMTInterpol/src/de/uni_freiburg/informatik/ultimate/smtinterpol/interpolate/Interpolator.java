@@ -855,12 +855,14 @@ public class Interpolator extends NonRecursive {
 		inA.set(0, mNumInterpolants + 1);
 		final BitSet inB = new BitSet(mNumInterpolants + 1);
 		inB.set(0, mNumInterpolants);
+		final BitSet containsMixedTerm = new BitSet(mNumInterpolants + 1);
 		for (final Term st : subterms) {
 			final Occurrence occInfo = getOccurrence(st);
 			inA.and(occInfo.mInA);
 			inB.and(occInfo.mInB);
+			containsMixedTerm.or(occInfo.mContainsMixedTerm);
 		}
-		info = new LitInfo(inA, inB);
+		info = new LitInfo(inA, inB, containsMixedTerm);
 		return info;
 	}
 
