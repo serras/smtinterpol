@@ -100,6 +100,8 @@ public class Interpolator extends NonRecursive {
 	HashMap<Term, Term[]> mInterpolants;
 	HashMap<Term, InterpolatorClauseTermInfo> mClauseTermInfos;
 	HashMap<Term, InterpolatorAtomInfo> mLiteralTermInfos;
+	HashMap<String, Occurrence> mSymbolOccurrenceInfos;
+	HashMap<Term, TermVariable> mMixedTermAuxEq;
 
 	/**
 	 * The interpolants which have already been computed. Used to store the interpolants preceding a resolution before
@@ -202,6 +204,8 @@ public class Interpolator extends NonRecursive {
 		mInterpolants = new HashMap<>();
 		mClauseTermInfos = new HashMap<>();
 		mLiteralTermInfos = new HashMap<>();
+		mSymbolOccurrenceInfos = new HashMap<>();
+		mMixedTermAuxEq = new HashMap<>();
 	}
 
 	public LogProxy getLogger() {
