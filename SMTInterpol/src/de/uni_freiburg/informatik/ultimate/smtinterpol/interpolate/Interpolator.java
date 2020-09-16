@@ -657,6 +657,9 @@ public class Interpolator extends NonRecursive {
 							}
 							addOccurrence(unquoted, partition);
 						}
+
+						// Color all symbols occurring in the literal.
+						colorSymbols(atom, partition);
 					}
 				}
 			}
