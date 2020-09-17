@@ -389,21 +389,24 @@ public class Interpolator extends NonRecursive {
 	}
 
 	/**
-	 * Summarize the results of a hyper-resolution step.
+	 * Summarize the results of a hyper-resolution step. Introduce quantifiers if
+	 * necessary.
 	 *
-	 * @param clause
-	 *            the interpolated clause
+	 * @param clause the interpolated clause
 	 */
 	@SuppressWarnings("unused")
 	private void summarize(final Term proofTerm) {
 		Term[] interpolants = null;
 		interpolants = mInterpolated.getLast();
+		final InterpolatorClauseTermInfo proofTermInfo = getClauseTermInfo(proofTerm);
+		if (proofTermInfo.getLiterals() == null) {
+			proofTermInfo.computeResolutionLiterals(this);
+		}
+
+		// Add quantifiers if necessary. TODO: Is there a better place to do this?
+		Term[] quantified = addQuantifier(interpolants, proofTermInfo.getLiterals());
 
 		if (Config.DEEP_CHECK_INTERPOLANTS && mChecker != null) {
-			final InterpolatorClauseTermInfo proofTermInfo = getClauseTermInfo(proofTerm);
-			if (proofTermInfo.getLiterals() == null) {
-				proofTermInfo.computeResolutionLiterals(this);
-			}
 			mChecker.checkInductivity(proofTermInfo.getLiterals(), interpolants);
 		}
 
