@@ -520,9 +520,11 @@ public class Interpolator extends NonRecursive {
 		public Occurrence intersect(final Occurrence other) {
 			final BitSet inA = (BitSet) mInA.clone();
 			final BitSet inB = (BitSet) mInB.clone();
+			final BitSet containsMixedTerm = (BitSet) mContainsMixedTerm.clone();
 			inA.and(other.mInA);
 			inB.and(other.mInB);
-			return new Occurrence(inA, inB);
+			containsMixedTerm.and(other.mContainsMixedTerm);
+			return new Occurrence(inA, inB, containsMixedTerm);
 		}
 
 		public boolean isAorShared(final int partition) {
