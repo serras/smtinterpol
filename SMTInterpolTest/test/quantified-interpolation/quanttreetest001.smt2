@@ -1,6 +1,6 @@
 (set-option :print-success false)
 ;(set-option :produce-proofs true)
-;(set-option :interpolant-check-mode true)
+(set-option :interpolant-check-mode true)
 (set-option :produce-interpolants true)
 (set-info :source "{
 Desired Interpolant:
