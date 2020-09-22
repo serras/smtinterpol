@@ -691,6 +691,9 @@ public class Interpolator extends NonRecursive {
 			if (term instanceof ApplicationTerm && ((ApplicationTerm) term).getFunction().isIntern()) {
 				final Term[] subTerms = ((ApplicationTerm) term).getParameters();
 				result = mFullOccurrence;
+				if (result.mContainsMixedTerm == null) {
+					result.mContainsMixedTerm = new BitSet(mNumInterpolants + 1);
+				}
 				if (subTerms.length == 0) {
 					return result;
 				}
