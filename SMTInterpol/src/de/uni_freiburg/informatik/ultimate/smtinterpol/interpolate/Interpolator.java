@@ -686,7 +686,7 @@ public class Interpolator extends NonRecursive {
 		if (term instanceof ConstantTerm) {
 			return mFullOccurrence;
 		}
-		Occurrence result = mSymbolPartition.get(term);
+		Occurrence result = mSymbolOccurrenceInfos.get(term);
 		if (result == null) {
 			if (term instanceof ApplicationTerm && ((ApplicationTerm) term).getFunction().isIntern()) {
 				final Term[] subTerms = ((ApplicationTerm) term).getParameters();
