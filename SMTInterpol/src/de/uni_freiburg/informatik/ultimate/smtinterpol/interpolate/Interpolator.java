@@ -1442,7 +1442,7 @@ public class Interpolator extends NonRecursive {
 				todoStack.add(params[i]);
 			}
 			// Add symbol if it is not an internal symbol
-			if (!funSymbol.isIntern()) {
+			if (!funSymbol.isIntern() || funSymbol.getName().startsWith("@AUX")) {
 				result.add(symbol);
 			}
 		}
