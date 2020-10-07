@@ -688,7 +688,8 @@ public class Interpolator extends NonRecursive {
 		}
 		Occurrence result = mSymbolOccurrenceInfos.get(term);
 		if (result == null) {
-			if (term instanceof ApplicationTerm && ((ApplicationTerm) term).getFunction().isIntern()) {
+			if (term instanceof ApplicationTerm && ((ApplicationTerm) term).getFunction().isIntern()
+					&& !((ApplicationTerm) term).getFunction().getName().startsWith("@AUX")) {
 				final Term[] subTerms = ((ApplicationTerm) term).getParameters();
 				result = mFullOccurrence;
 				if (result.mContainsMixedTerm == null) {
