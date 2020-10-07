@@ -752,8 +752,8 @@ public class Interpolator extends NonRecursive {
 			result = result.intersect(mSymbolOccurrenceInfos.get(s));
 		}
 
-		BitSet mixed = new BitSet(mPartitions.size());
-		for (int part = 0; part < mPartitions.size(); part++) {
+		BitSet mixed = new BitSet(mNumInterpolants);
+		for (int part = 0; part < mNumInterpolants; part++) {
 			// For a mixed term, set occurrence to the occurrence from the outermost
 			// function symbol.
 			if (result.isMixed(part)) {
