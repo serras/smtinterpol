@@ -891,6 +891,7 @@ public class SMTInterpol extends NoopScript {
 					ipls[i] = simplifier.getSimplifiedTerm(ipls[i]);
 				}
 			}
+			mLogger.info("FOUND VALID INTERPOLANT");
 			return ipls;
 		} catch (final SMTLIBException ex) {
 			if (mErrorCallback != null) {
