@@ -1,0 +1,23 @@
+tool	SMTInterpol 2.5-799-gddaa8e43	SMTInterpol 2.5-799-gddaa8e43	SMTInterpol 2.5-799-gddaa8e43	SMTInterpol 2.5-799-gddaa8e43
+run set	quantified_interpolation	quantified_interpolation	quantified_interpolation	quantified_interpolation
+../../SMTInterpolTest/test/quantified-interpolation/benchmark/	status	cputime (s)	walltime (s)	memory (MB)
+traverse1_postcondition_of_traverse1_21_1_interpolation_2.smt2	done	91.372268297	63.11893684900133	1328.263168
+traverse1_postcondition_of_traverse1_21_1_interpolation_3.smt2	done	327.941209896	296.0059450409899	1409.847296
+traverse1_postcondition_of_traverse1_21_1_interpolation_4.smt2	done	341.150084561	311.2355306590034	1397.0513919999999
+traverse2_loop_invariant_35_5_interpolation_1.smt2	TIMEOUT	600.859260784	551.9717935709923	1434.8861439999998
+traverse2_loop_invariant_35_5_interpolation_2.smt2	TIMEOUT	600.202807618	547.0936526589794	1488.257024
+traverse2_loop_invariant_35_5_interpolation_3.smt2	TIMEOUT	600.397359183	536.7532569949981	1448.951808
+traverse2_loop_invariant_35_5_interpolation_4.smt2	TIMEOUT	600.101552058	545.0762812909961	1454.563328
+traverse2_loop_invariant_35_5_interpolation_5.smt2	TIMEOUT	600.524263771	540.2992985140008	1467.912192
+traverse2_postcondition_of_traverse2_38_1_interpolation_1.smt2	TIMEOUT	600.19786946	556.3147280639969	1404.8870399999998
+traverse2_postcondition_of_traverse2_38_1_interpolation_2.smt2	TIMEOUT	600.991387542	561.651277078985	1370.210304
+traverse2_postcondition_of_traverse2_38_1_interpolation_3.smt2	done	546.335560356	496.6186475090217	1410.1463039999999
+traverse2_postcondition_of_traverse2_38_1_interpolation_4.smt2	done	209.389619327	171.37959072299418	1359.5566079999999
+traverse2_postcondition_of_traverse2_38_1_interpolation_5.smt2	TIMEOUT	600.283393671	553.6779863699921	1350.180864
+union_check_heap_access_40_4_interpolation_1.smt2	TIMEOUT	600.830423608	549.0962256640196	1409.343488
+union_check_heap_access_40_4_interpolation_2.smt2	TIMEOUT	600.118653194	544.1792099180166	1430.265856
+union_check_heap_access_40_4_interpolation_3.smt2	TIMEOUT	601.330696705	546.0563350540178	1412.124672
+union_check_heap_access_40_4_interpolation_4.smt2	TIMEOUT	600.887078311	532.4688929830154	1423.79008
+union_check_heap_access_40_4_interpolation_5.smt2	TIMEOUT	600.825639314	539.1378010229964	1430.573056
+union_precondition_of_find_37_7_interpolation_2.smt2	done	425.233743988	382.13696018399787	1471.565824
+union_precondition_of_find_37_7_interpolation_4.smt2	done	80.652395664	49.12523418600904	1320.026112

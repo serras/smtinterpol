@@ -1,0 +1,69 @@
+   BENCHMARK INFORMATION
+SMTInterpol
+benchmark definition:    benchmark-smtinterpol-quantified-interpolation.xml
+name:                    benchmark-smtinterpol-quantified-interpolation
+run sets:                quantified_interpolation
+date:                    Fri, 2020-10-09 10:46:12 CEST
+tool:                    SMTInterpol 2.5-798-gdef54da9
+tool executable:         /usr/lib/jvm/java-8-openjdk-amd64/bin/java
+options:                 
+parallel runs:           4
+resource limits:
+- time:                  600 s
+hardware requirements:
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    Ubuntu-ThinkPad-T495s
+os:                      Linux-5.4.0-48-generic-x86_64-with-glibc2.29
+cpu:                     AMD Ryzen 7 PRO 3700U w/ Radeon Vega Mobile Gfx
+- cores:                 8
+- max frequency:         2300.0 MHz
+- turbo boost enabled:   True
+ram:                     14623.207424 MB
+------------------------------------------------------------
+
+
+
+quantified_interpolation
+Run set 1 of 1 with options '' and propertyfile 'None'
+
+inputfile                                                   status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------------------------------------------
+concat_check_heap_access_23_4_interpolation_1.smt2          done                           491.75      451.25        None
+concat_check_heap_access_23_4_interpolation_2.smt2          TIMEOUT                        600.66      567.99        None
+concat_check_heap_access_23_4_interpolation_3.smt2          ERROR (1)                      304.70      264.46        None
+concat_check_heap_access_23_4_interpolation_4.smt2          TIMEOUT                        600.21      555.75        None
+concat_check_heap_access_23_4_interpolation_5.smt2          TIMEOUT                        600.16      556.82        None
+concat_invariant_18_4_interpolation_2.smt2                  done                           238.77      203.21        None
+concat_invariant_18_4_interpolation_5.smt2                  ERROR (1)                       71.37       52.38        None
+concat_loop_invariant_22_5_interpolation_1.smt2             ERROR (1)                      171.76      148.88        None
+concat_loop_invariant_22_5_interpolation_2.smt2             TIMEOUT                        600.15      565.97        None
+concat_loop_invariant_22_5_interpolation_3.smt2             ERROR (1)                       80.95       55.52        None
+concat_loop_invariant_22_5_interpolation_4.smt2             ERROR                          563.53      517.61        None
+concat_loop_invariant_22_5_interpolation_5.smt2             TIMEOUT                        600.88      562.39        None
+concat_postcondition_of_concat_14_4_interpolation_2.smt2    done                           124.35       78.87        None
+concat_postcondition_of_concat_14_4_interpolation_5.smt2    done                            93.87       51.74        None
+copy_invariant_16_2_interpolation_3.smt2                    ERROR                          272.01      223.54        None
+copy_loop_check_heap_access_23_4_interpolation_2.smt2       done                            96.06       77.56        None
+copy_postcondition_of_copy_25_2_interpolation_1.smt2        TIMEOUT                        600.28      552.10        None
+copy_postcondition_of_copy_25_2_interpolation_2.smt2        TIMEOUT                        600.81      567.05        None
+copy_postcondition_of_copy_25_2_interpolation_3.smt2        TIMEOUT                        600.73      562.01        None
+copy_postcondition_of_copy_25_2_interpolation_4.smt2        TIMEOUT                        601.19      556.07        None
+copy_postcondition_of_copy_25_2_interpolation_5.smt2        ERROR (1)                      261.00      228.66        None
+create_postcondition_of_create_50_4_interpolation_1.smt2    TIMEOUT                        600.87      548.52        None
+create_postcondition_of_create_50_4_interpolation_2.smt2    TIMEOUT                        600.74      544.57        None
+create_postcondition_of_create_50_4_interpolation_3.smt2    TIMEOUT                        600.19      537.89        None
+create_postcondition_of_create_50_4_interpolation_4.smt2    TIMEOUT                        600.39      538.76        None
+create_postcondition_of_create_50_4_interpolation_5.smt2    ERROR (1)                      130.11      101.02        None
+-------------------------------------------------------------------------------------------------------------------------
+Run set 1                                                   done                         10708.49     2496.76           -
+
+Statistics:             26 Files
+  correct:               0
+    correct true:        0
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:              21

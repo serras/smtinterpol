@@ -1,0 +1,69 @@
+   BENCHMARK INFORMATION
+SMTInterpol
+benchmark definition:    benchmark-smtinterpol-quantified-interpolation.xml
+name:                    benchmark-smtinterpol-quantified-interpolation
+run sets:                quantified_interpolation
+date:                    Fri, 2020-10-09 10:45:38 CEST
+tool:                    SMTInterpol 2.5-798-gdef54da9
+tool executable:         /usr/lib/jvm/java-8-openjdk-amd64/bin/java
+options:                 
+parallel runs:           4
+resource limits:
+- time:                  600 s
+hardware requirements:
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    Ubuntu-ThinkPad-T495s
+os:                      Linux-5.4.0-48-generic-x86_64-with-glibc2.29
+cpu:                     AMD Ryzen 7 PRO 3700U w/ Radeon Vega Mobile Gfx
+- cores:                 8
+- max frequency:         2300.0 MHz
+- turbo boost enabled:   True
+ram:                     14623.207424 MB
+------------------------------------------------------------
+
+
+
+quantified_interpolation
+Run set 1 of 1 with options '' and propertyfile 'None'
+
+inputfile                                                   status                       cpu time   wall time        host
+-------------------------------------------------------------------------------------------------------------------------
+concat_check_heap_access_23_4_interpolation_1.smt2          
+concat_check_heap_access_23_4_interpolation_2.smt2          
+concat_check_heap_access_23_4_interpolation_3.smt2          
+concat_check_heap_access_23_4_interpolation_4.smt2          
+concat_check_heap_access_23_4_interpolation_5.smt2          
+concat_invariant_18_4_interpolation_2.smt2                  
+concat_invariant_18_4_interpolation_5.smt2                  
+concat_loop_invariant_22_5_interpolation_1.smt2             
+concat_loop_invariant_22_5_interpolation_2.smt2             
+concat_loop_invariant_22_5_interpolation_3.smt2             
+concat_loop_invariant_22_5_interpolation_4.smt2             
+concat_loop_invariant_22_5_interpolation_5.smt2             
+concat_postcondition_of_concat_14_4_interpolation_2.smt2    
+concat_postcondition_of_concat_14_4_interpolation_5.smt2    
+copy_invariant_16_2_interpolation_3.smt2                    
+copy_loop_check_heap_access_23_4_interpolation_2.smt2       
+copy_postcondition_of_copy_25_2_interpolation_1.smt2        
+copy_postcondition_of_copy_25_2_interpolation_2.smt2        
+copy_postcondition_of_copy_25_2_interpolation_3.smt2        
+copy_postcondition_of_copy_25_2_interpolation_4.smt2        
+copy_postcondition_of_copy_25_2_interpolation_5.smt2        
+create_postcondition_of_create_50_4_interpolation_1.smt2    
+create_postcondition_of_create_50_4_interpolation_2.smt2    
+create_postcondition_of_create_50_4_interpolation_3.smt2    
+create_postcondition_of_create_50_4_interpolation_4.smt2    
+create_postcondition_of_create_50_4_interpolation_5.smt2    
+-------------------------------------------------------------------------------------------------------------------------
+Run set 1                                                   done                             0.00        0.24           -
+
+Statistics:              0 Files
+  correct:               0
+    correct true:        0
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               0

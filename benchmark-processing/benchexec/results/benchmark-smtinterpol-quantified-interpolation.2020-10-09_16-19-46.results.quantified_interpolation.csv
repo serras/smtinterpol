@@ -1,0 +1,23 @@
+tool	SMTInterpol 2.5-799-gddaa8e43	SMTInterpol 2.5-799-gddaa8e43	SMTInterpol 2.5-799-gddaa8e43	SMTInterpol 2.5-799-gddaa8e43
+run set	quantified_interpolation	quantified_interpolation	quantified_interpolation	quantified_interpolation
+../../SMTInterpolTest/test/quantified-interpolation/benchmark/	status	cputime (s)	walltime (s)	memory (MB)
+reverse_invariant_16_2_interpolation_5.smt2	ERROR	27.497014184	12.086118706007255	568.332288
+reverse_postcondition_of_reverse_26_1_interpolation_1.smt2	TIMEOUT	600.786753795	567.3702468629926	1390.1086719999998
+reverse_postcondition_of_reverse_26_1_interpolation_2.smt2	TIMEOUT	600.660140447	571.9292414730007	1352.548352
+reverse_postcondition_of_reverse_26_1_interpolation_3.smt2	TIMEOUT	600.605036165	552.8599917239917	1467.31008
+reverse_postcondition_of_reverse_26_1_interpolation_4.smt2	TIMEOUT	600.942877854	567.1042355920072	1384.38656
+reverse_postcondition_of_reverse_26_1_interpolation_5.smt2	TIMEOUT	601.067278974	565.1405185299809	1379.852288
+split_invariant_73_2_interpolation_2.smt2	done	130.083002876	94.3310051249864	1351.86432
+split_invariant_73_2_interpolation_3.smt2	ERROR	165.546274981	128.65020692400867	1405.145088
+split_loop_check_heap_access_76_4_interpolation_1.smt2	done	86.900561568	50.576866153016454	1345.86368
+split_loop_check_heap_access_76_4_interpolation_2.smt2	done	145.10298954	103.30960577001679	1375.207424
+split_loop_check_heap_access_76_4_interpolation_3.smt2	ERROR	191.771748927	149.11836972497986	1345.59744
+split_loop_check_heap_access_76_4_interpolation_4.smt2	done	197.794653223	154.0735523889889	1368.9733119999999
+split_loop_check_heap_access_76_4_interpolation_5.smt2	done	358.926678965	311.1160148709896	1412.0345599999998
+split_loop_check_heap_access_77_4_interpolation_4.smt2	done	82.04688186	61.4449547730037	1334.1818879999998
+traverse1_loop_invariant_20_3_interpolation_1.smt2	TIMEOUT	600.731657624	544.8456444180047	1472.2252799999999
+traverse1_loop_invariant_20_3_interpolation_2.smt2	TIMEOUT	600.455028828	542.303695464012	1476.3008
+traverse1_loop_invariant_20_3_interpolation_3.smt2	TIMEOUT	600.109663615	542.232736756996	1459.306496
+traverse1_loop_invariant_20_3_interpolation_4.smt2	TIMEOUT	600.776664049	546.3902064959984	1429.643264
+traverse1_loop_invariant_20_3_interpolation_5.smt2	TIMEOUT	600.618359521	542.7573679189954	1379.2215039999999
+traverse1_postcondition_of_traverse1_21_1_interpolation_1.smt2	done	121.844886909	77.90461336899898	1358.921728

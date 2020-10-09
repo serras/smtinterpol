@@ -1,0 +1,63 @@
+   BENCHMARK INFORMATION
+SMTInterpol
+benchmark definition:    benchmark-smtinterpol-quantified-interpolation.xml
+name:                    benchmark-smtinterpol-quantified-interpolation
+run sets:                quantified_interpolation
+date:                    Fri, 2020-10-09 15:19:29 CEST
+tool:                    SMTInterpol 2.5-799-gddaa8e43
+tool executable:         /usr/lib/jvm/java-8-openjdk-amd64/bin/java
+options:                 
+parallel runs:           4
+resource limits:
+- time:                  600 s
+hardware requirements:
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    Ubuntu-ThinkPad-T495s
+os:                      Linux-5.4.0-48-generic-x86_64-with-glibc2.29
+cpu:                     AMD Ryzen 7 PRO 3700U w/ Radeon Vega Mobile Gfx
+- cores:                 8
+- max frequency:         2300.0 MHz
+- turbo boost enabled:   True
+ram:                     14623.207424 MB
+------------------------------------------------------------
+
+
+
+quantified_interpolation
+Run set 1 of 1 with options '' and propertyfile 'None'
+
+inputfile                                                            status                       cpu time   wall time        host
+----------------------------------------------------------------------------------------------------------------------------------
+rec_copy_postcondition_of_rec_copy_53_2_interpolation_4.smt2         TIMEOUT                        600.17      569.43        None
+rec_dispose_check_free_16_4_interpolation_2.smt2                     done                             6.71        4.16        None
+rec_dispose_check_heap_access_15_4_interpolation_4.smt2              done                             7.02        4.75        None
+rec_filter_check_free_23_4_interpolation_1.smt2                      done                             9.45        5.83        None
+rec_filter_check_heap_access_22_4_interpolation_2.smt2               done                             6.95        3.58        None
+rec_filter_postcondition_of_rec_filter_15_17_interpolation_3.smt2    done                            14.37        8.41        None
+rec_filter_postcondition_of_rec_filter_15_17_interpolation_5.smt2    done                            16.82       10.77        None
+rec_filter_precondition_of_rec_filter_18_10_interpolation_3.smt2     ERROR                           27.08       15.54        None
+rec_filter_precondition_of_rec_filter_24_11_interpolation_3.smt2     ERROR                          178.41      146.34        None
+rec_insert_postcondition_of_rec_insert_14_4_interpolation_1.smt2     TIMEOUT                        600.32      543.02        None
+rec_insert_postcondition_of_rec_insert_14_4_interpolation_2.smt2     ERROR                          378.25      333.39        None
+rec_insert_postcondition_of_rec_insert_19_6_interpolation_3.smt2     ERROR                          357.06      308.55        None
+rec_remove_check_free_19_4_interpolation_4.smt2                      done                             9.78        3.26        None
+rec_remove_check_heap_access_18_4_interpolation_3.smt2               done                             7.23        2.38        None
+rec_remove_check_heap_access_23_4_interpolation_3.smt2               done                             8.84        2.96        None
+rec_remove_postcondition_of_rec_remove_15_4_interpolation_2.smt2     done                            21.19        6.71        None
+rec_remove_postcondition_of_rec_remove_15_4_interpolation_4.smt2     done                            22.31        7.02        None
+rec_reverse_acc_check_heap_access_17_4_interpolation_2.smt2          done                            15.49        4.83        None
+rec_reverse_acc_check_heap_access_17_4_interpolation_5.smt2          done                            24.67        9.73        None
+rec_reverse_acc_check_heap_access_18_4_interpolation_4.smt2          done                            14.14        4.45        None
+----------------------------------------------------------------------------------------------------------------------------------
+Run set 1                                                            done                          2326.99      569.65           -
+
+Statistics:             20 Files
+  correct:               0
+    correct true:        0
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               6
