@@ -1,0 +1,13 @@
+tool	SMTInterpol 2.5-801-g09896928	SMTInterpol 2.5-801-g09896928	SMTInterpol 2.5-801-g09896928	SMTInterpol 2.5-801-g09896928
+run set	quantified_interpolation	quantified_interpolation	quantified_interpolation	quantified_interpolation
+../../SMTInterpolTest/test/quantified-interpolation/benchmark/	status	cputime (s)	walltime (s)	memory (MB)
+concat_loop_invariant_22_5_interpolation_2.smt2	ERROR	57911.385905269	55980.85617954499	1673.424896
+copy_postcondition_of_copy_25_2_interpolation_2.smt2	done	27403.929217159	26507.588042052987	1909.506048
+create_postcondition_of_create_50_4_interpolation_2.smt2				
+dl_concat_postcondition_of_dl_concat_19_4_interpolation_2.smt2	done	17459.036501164	16851.591720303986	2019.3239039999999
+dl_concat_postcondition_of_dl_concat_21_4_interpolation_2.smt2	done	47000.261377446	45474.07497013899	1696.616448
+dl_concat_postcondition_of_dl_concat_21_4_interpolation_4.smt2	done	8966.50188558	8679.33528915199	1693.1389439999998
+dl_concat_postcondition_of_dl_concat_21_4_interpolation_5.smt2	done	8646.745464496	8393.037157719024	1672.9088
+dl_dispose_loop_invariant_23_3_interpolation_2.smt2	done	8084.481694053	7268.63550179798	4402.532352
+dl_dispose_loop_invariant_23_3_interpolation_3.smt2	done	12114.864345925	11731.381391372008	1697.652736
+dl_dispose_loop_invariant_23_3_interpolation_5.smt2				
