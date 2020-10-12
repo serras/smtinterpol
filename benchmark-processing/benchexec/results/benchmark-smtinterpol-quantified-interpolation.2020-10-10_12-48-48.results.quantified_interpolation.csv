@@ -1,0 +1,23 @@
+tool	SMTInterpol 2.5-801-g09896928	SMTInterpol 2.5-801-g09896928	SMTInterpol 2.5-801-g09896928	SMTInterpol 2.5-801-g09896928
+run set	quantified_interpolation	quantified_interpolation	quantified_interpolation	quantified_interpolation
+../../SMTInterpolTest/test/quantified-interpolation/benchmark/	status	cputime (s)	walltime (s)	memory (MB)
+concat_check_heap_access_23_4_interpolation_2.smt2	done	2105.799976039	2026.435581318001	1707.4176
+concat_check_heap_access_23_4_interpolation_4.smt2	done	3810.715030248	3691.217095606	1688.5923839999998
+concat_check_heap_access_23_4_interpolation_5.smt2	done	3171.958071372	3058.590015922993	1688.526848
+concat_loop_invariant_22_5_interpolation_1.smt2	ERROR	1467.673376132	1408.6154208119988	1682.784256
+concat_loop_invariant_22_5_interpolation_2.smt2	TIMEOUT	7200.63492787	7005.656189273999	1686.03648
+concat_loop_invariant_22_5_interpolation_3.smt2	ERROR	1866.296657389	1797.4930979519995	1694.195712
+concat_loop_invariant_22_5_interpolation_5.smt2	ERROR	2390.864317206	2312.8869367139996	1688.22784
+copy_postcondition_of_copy_25_2_interpolation_1.smt2	done	3871.511964692	3742.4871225089883	1692.28288
+copy_postcondition_of_copy_25_2_interpolation_2.smt2	TIMEOUT	7200.179676303	6953.099438969002	1704.665088
+copy_postcondition_of_copy_25_2_interpolation_3.smt2	done	1125.827231836	1062.639570763	1699.610624
+copy_postcondition_of_copy_25_2_interpolation_4.smt2	done	273.965022538	231.25198362699302	1608.441856
+create_postcondition_of_create_50_4_interpolation_1.smt2	ERROR	1322.068418685	1258.0197239300032	1703.6288
+create_postcondition_of_create_50_4_interpolation_2.smt2	TIMEOUT	7200.785026228	6934.335354326991	1823.043584
+create_postcondition_of_create_50_4_interpolation_3.smt2	done	500.224300088	448.49870889999147	1680.03584
+create_postcondition_of_create_50_4_interpolation_4.smt2	done	1355.231545233	1288.6318240059918	1681.2318719999998
+create_postcondition_of_create_50_4_interpolation_5.smt2	ERROR	894.256507601	842.6049382440106	1693.700096
+dl_concat_postcondition_of_dl_concat_19_4_interpolation_2.smt2	TIMEOUT	7200.567135564	6917.434750554996	1654.431744
+dl_concat_postcondition_of_dl_concat_19_4_interpolation_3.smt2	done	3452.325461816	3333.957957407998	1692.2705919999999
+dl_concat_postcondition_of_dl_concat_19_4_interpolation_5.smt2	done	6229.365414791	6004.479731497006	1666.772992
+dl_concat_postcondition_of_dl_concat_21_4_interpolation_2.smt2	TIMEOUT	7200.327877905	6932.437777629006	1675.702272

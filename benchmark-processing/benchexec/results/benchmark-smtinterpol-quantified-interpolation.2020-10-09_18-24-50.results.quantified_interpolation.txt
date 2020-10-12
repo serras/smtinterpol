@@ -1,0 +1,309 @@
+   BENCHMARK INFORMATION
+SMTInterpol
+benchmark definition:    benchmark-smtinterpol-quantified-interpolation.xml
+name:                    benchmark-smtinterpol-quantified-interpolation
+run sets:                quantified_interpolation
+date:                    Fri, 2020-10-09 18:24:50 CEST
+tool:                    SMTInterpol 2.5-801-g09896928
+tool executable:         /usr/bin/java
+options:                 
+parallel runs:           8
+resource limits:
+- time:                  600 s
+hardware requirements:
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    ubuntu-desktop-e
+os:                      Linux-5.3.0-64-generic-x86_64-with-Ubuntu-19.10-eoan
+cpu:                     AMD Ryzen 5 2600X Six-Core Processor
+- cores:                 12
+- max frequency:         3600.0 MHz
+- turbo boost enabled:   True
+ram:                     16801.513472 MB
+------------------------------------------------------------
+
+
+
+quantified_interpolation
+Run set 1 of 1 with options '' and propertyfile 'None'
+
+inputfile                                                                       status                       cpu time   wall time        host
+---------------------------------------------------------------------------------------------------------------------------------------------
+dispose_loop_invariant_20_3_interpolation_1.smt2                                ERROR                          140.02      118.38        None
+dispose_loop_invariant_20_3_interpolation_2.smt2                                done                           457.73      432.13        None
+dispose_loop_invariant_20_3_interpolation_3.smt2                                done                           245.57      222.19        None
+dispose_loop_invariant_20_3_interpolation_4.smt2                                done                           122.08      102.85        None
+dispose_loop_invariant_20_3_interpolation_5.smt2                                ERROR                          331.14      302.38        None
+dispose_postcondition_of_dispose_20_3_interpolation_1.smt2                      done                            19.15       10.42        None
+dispose_postcondition_of_dispose_20_3_interpolation_3.smt2                      done                            69.55       56.41        None
+dl_concat_postcondition_of_dl_concat_19_4_interpolation_1.smt2                  TIMEOUT                        600.68      568.85        None
+dl_concat_postcondition_of_dl_concat_19_4_interpolation_2.smt2                  TIMEOUT                        600.58      564.47        None
+dl_concat_postcondition_of_dl_concat_19_4_interpolation_3.smt2                  TIMEOUT                        600.37      564.45        None
+dl_concat_postcondition_of_dl_concat_19_4_interpolation_4.smt2                  done                           444.86      408.58        None
+dl_concat_postcondition_of_dl_concat_19_4_interpolation_5.smt2                  TIMEOUT                        600.75      575.77        None
+dl_concat_postcondition_of_dl_concat_21_4_interpolation_1.smt2                  TIMEOUT                        600.75      554.47        None
+dl_concat_postcondition_of_dl_concat_21_4_interpolation_2.smt2                  TIMEOUT                        600.21      561.41        None
+dl_concat_postcondition_of_dl_concat_21_4_interpolation_3.smt2                  TIMEOUT                        600.73      557.81        None
+dl_concat_postcondition_of_dl_concat_21_4_interpolation_4.smt2                  TIMEOUT                        600.63      563.20        None
+dl_concat_postcondition_of_dl_concat_21_4_interpolation_5.smt2                  TIMEOUT                        600.49      558.37        None
+dl_copy_invariant_19_2_interpolation_1.smt2                                     done                            61.30       32.67        None
+dl_copy_invariant_19_2_interpolation_2.smt2                                     done                            96.16       67.53        None
+dl_copy_invariant_19_2_interpolation_3.smt2                                     done                            98.05       67.06        None
+dl_copy_loop_check_heap_access_29_4_interpolation_2.smt2                        done                           185.95      164.78        None
+dl_copy_loop_check_heap_access_29_4_interpolation_4.smt2                        done                           193.63      171.88        None
+dl_copy_loop_check_heap_access_31_6_interpolation_1.smt2                        done                           327.49      301.99        None
+dl_copy_loop_check_heap_access_31_6_interpolation_2.smt2                        done                           483.64      456.85        None
+dl_copy_loop_check_heap_access_31_6_interpolation_4.smt2                        done                            94.73       76.32        None
+dl_copy_loop_check_heap_access_35_4_interpolation_2.smt2                        done                           449.09      421.41        None
+dl_copy_loop_check_heap_access_35_4_interpolation_3.smt2                        done                           350.80      320.68        None
+dl_copy_loop_check_heap_access_35_4_interpolation_4.smt2                        done                            87.13       63.25        None
+dl_copy_loop_check_heap_access_35_4_interpolation_5.smt2                        done                           242.69      212.05        None
+dl_dispose_loop_invariant_23_3_interpolation_1.smt2                             TIMEOUT                        600.54      558.97        None
+dl_dispose_loop_invariant_23_3_interpolation_2.smt2                             TIMEOUT                        600.70      562.71        None
+dl_dispose_loop_invariant_23_3_interpolation_3.smt2                             TIMEOUT                        601.02      562.27        None
+dl_dispose_loop_invariant_23_3_interpolation_4.smt2                             TIMEOUT                        600.60      562.27        None
+dl_dispose_loop_invariant_23_3_interpolation_5.smt2                             TIMEOUT                        600.39      559.68        None
+dl_dispose_postcondition_of_dl_dispose_24_1_interpolation_5.smt2                done                            25.64        9.36        None
+dl_filter_invariant_19_2_interpolation_1.smt2                                   TIMEOUT                        600.49      568.10        None
+dl_filter_invariant_19_2_interpolation_2.smt2                                   done                           282.12      239.83        None
+dl_filter_invariant_19_2_interpolation_3.smt2                                   TIMEOUT                        600.70      551.24        None
+dl_filter_invariant_19_2_interpolation_4.smt2                                   TIMEOUT                        600.55      557.42        None
+dl_filter_invariant_19_2_interpolation_5.smt2                                   TIMEOUT                        600.18      570.90        None
+dl_filter_loop_check_free_36_6_interpolation_1.smt2                             done                           152.37      126.55        None
+dl_filter_loop_check_free_36_6_interpolation_3.smt2                             done                           489.51      458.24        None
+dl_filter_loop_check_free_36_6_interpolation_4.smt2                             done                           130.68      111.59        None
+dl_filter_loop_check_free_36_6_interpolation_5.smt2                             done                            77.11       56.12        None
+dl_filter_loop_check_heap_access_24_4_interpolation_1.smt2                      done                            20.77        7.87        None
+dl_filter_loop_check_heap_access_24_4_interpolation_3.smt2                      done                            46.57       31.23        None
+dl_filter_loop_check_heap_access_24_4_interpolation_4.smt2                      TIMEOUT                        600.59      571.66        None
+dl_filter_loop_check_heap_access_32_8_interpolation_2.smt2                      TIMEOUT                        600.42      569.64        None
+dl_filter_loop_check_heap_access_32_8_interpolation_3.smt2                      TIMEOUT                        600.62      571.86        None
+dl_filter_loop_check_heap_access_32_8_interpolation_4.smt2                      done                            87.35       65.73        None
+dl_filter_loop_check_heap_access_32_8_interpolation_5.smt2                      done                           111.17       90.65        None
+dl_insert_check_heap_access_31_4_interpolation_1.smt2                           TIMEOUT                        600.63      566.73        None
+dl_insert_check_heap_access_31_4_interpolation_2.smt2                           TIMEOUT                        600.45      566.64        None
+dl_insert_check_heap_access_31_4_interpolation_3.smt2                           TIMEOUT                        600.34      574.29        None
+dl_insert_check_heap_access_31_4_interpolation_4.smt2                           TIMEOUT                        600.85      567.90        None
+dl_insert_check_heap_access_31_4_interpolation_5.smt2                           TIMEOUT                        600.43      563.31        None
+dl_insert_check_heap_access_32_4_interpolation_1.smt2                           TIMEOUT                        600.28      569.82        None
+dl_insert_check_heap_access_32_4_interpolation_2.smt2                           TIMEOUT                        600.78      562.86        None
+dl_insert_check_heap_access_32_4_interpolation_3.smt2                           TIMEOUT                        600.26      567.34        None
+dl_insert_check_heap_access_32_4_interpolation_4.smt2                           TIMEOUT                        600.55      569.63        None
+dl_insert_check_heap_access_32_4_interpolation_5.smt2                           TIMEOUT                        600.50      570.96        None
+dl_insert_check_heap_access_34_6_interpolation_1.smt2                           TIMEOUT                        600.39      569.44        None
+dl_insert_check_heap_access_34_6_interpolation_2.smt2                           TIMEOUT                        600.64      567.53        None
+dl_insert_check_heap_access_34_6_interpolation_3.smt2                           done                           279.99      255.13        None
+dl_insert_check_heap_access_34_6_interpolation_4.smt2                           TIMEOUT                        600.88      566.72        None
+dl_insert_check_heap_access_34_6_interpolation_5.smt2                           TIMEOUT                        600.93      565.87        None
+dl_insert_check_heap_access_38_4_interpolation_1.smt2                           TIMEOUT                        600.65      569.44        None
+dl_insert_check_heap_access_38_4_interpolation_2.smt2                           TIMEOUT                        600.19      562.07        None
+dl_insert_check_heap_access_38_4_interpolation_3.smt2                           TIMEOUT                        600.79      566.41        None
+dl_insert_check_heap_access_38_4_interpolation_4.smt2                           TIMEOUT                        600.96      566.12        None
+dl_insert_check_heap_access_38_4_interpolation_5.smt2                           TIMEOUT                        600.82      565.90        None
+dl_insert_invariant_24_4_interpolation_1.smt2                                   done                            46.33       21.78        None
+dl_insert_invariant_24_4_interpolation_2.smt2                                   done                            72.96       44.43        None
+dl_insert_invariant_24_4_interpolation_3.smt2                                   TIMEOUT                        600.91      558.60        None
+dl_insert_invariant_24_4_interpolation_4.smt2                                   done                           276.22      244.11        None
+dl_insert_invariant_24_4_interpolation_5.smt2                                   TIMEOUT                        600.91      560.09        None
+dl_insert_postcondition_of_dl_insert_17_4_interpolation_1.smt2                  TIMEOUT                        600.88      555.77        None
+dl_insert_postcondition_of_dl_insert_17_4_interpolation_2.smt2                  TIMEOUT                        600.98      553.86        None
+dl_insert_postcondition_of_dl_insert_17_4_interpolation_3.smt2                  TIMEOUT                        600.61      562.46        None
+dl_insert_postcondition_of_dl_insert_17_4_interpolation_5.smt2                  TIMEOUT                        600.62      559.78        None
+dl_remove_check_free_49_4_interpolation_1.smt2                                  TIMEOUT                        600.56      567.01        None
+dl_remove_check_free_49_4_interpolation_2.smt2                                  TIMEOUT                        600.26      560.59        None
+dl_remove_check_free_49_4_interpolation_3.smt2                                  TIMEOUT                        600.85      565.00        None
+dl_remove_check_free_49_4_interpolation_4.smt2                                  TIMEOUT                        600.57      568.62        None
+dl_remove_check_free_49_4_interpolation_5.smt2                                  TIMEOUT                        600.43      568.59        None
+dl_remove_check_heap_access_38_4_interpolation_1.smt2                           TIMEOUT                        600.47      561.15        None
+dl_remove_check_heap_access_38_4_interpolation_2.smt2                           TIMEOUT                        600.11      556.96        None
+dl_remove_check_heap_access_38_4_interpolation_3.smt2                           done                           187.89      156.60        None
+dl_remove_check_heap_access_38_4_interpolation_4.smt2                           TIMEOUT                        600.54      561.95        None
+dl_remove_check_heap_access_38_4_interpolation_5.smt2                           TIMEOUT                        600.46      554.33        None
+dl_remove_check_heap_access_40_6_1_interpolation_1.smt2                         TIMEOUT                        600.75      565.53        None
+dl_remove_check_heap_access_40_6_1_interpolation_2.smt2                         TIMEOUT                        600.98      575.18        None
+dl_remove_check_heap_access_40_6_1_interpolation_3.smt2                         TIMEOUT                        600.60      562.96        None
+dl_remove_check_heap_access_40_6_1_interpolation_4.smt2                         TIMEOUT                        601.06      567.40        None
+dl_remove_check_heap_access_40_6_1_interpolation_5.smt2                         done                           338.67      306.00        None
+dl_remove_check_heap_access_40_6_interpolation_2.smt2                           done                            74.48       56.79        None
+dl_remove_check_heap_access_40_6_interpolation_3.smt2                           TIMEOUT                        600.24      574.72        None
+dl_remove_check_heap_access_40_6_interpolation_4.smt2                           done                           150.96      129.09        None
+dl_remove_check_heap_access_45_6_interpolation_1.smt2                           done                            89.94       59.64        None
+dl_remove_check_heap_access_45_6_interpolation_2.smt2                           done                           162.16      133.11        None
+dl_remove_check_heap_access_45_6_interpolation_3.smt2                           done                           162.80      135.89        None
+dl_remove_check_heap_access_45_6_interpolation_4.smt2                           done                            74.33       49.83        None
+dl_remove_check_heap_access_45_6_interpolation_5.smt2                           done                            60.31       38.46        None
+dl_remove_invariant_27_4_interpolation_1.smt2                                   done                           123.87       93.61        None
+dl_remove_invariant_27_4_interpolation_2.smt2                                   TIMEOUT                        600.58      574.82        None
+dl_remove_invariant_27_4_interpolation_3.smt2                                   done                           274.02      238.29        None
+dl_remove_invariant_27_4_interpolation_4.smt2                                   TIMEOUT                        600.89      562.36        None
+dl_remove_invariant_27_4_interpolation_5.smt2                                   done                           304.94      276.32        None
+dl_remove_loop_check_heap_access_33_6_interpolation_1.smt2                      done                            40.54       24.13        None
+dl_remove_loop_check_heap_access_33_6_interpolation_2.smt2                      done                            60.51       44.64        None
+dl_remove_postcondition_of_dl_remove_19_4_interpolation_1.smt2                  done                           223.86      190.80        None
+dl_remove_postcondition_of_dl_remove_19_4_interpolation_2.smt2                  done                            98.91       67.52        None
+dl_remove_postcondition_of_dl_remove_19_4_interpolation_3.smt2                  done                           133.47       93.75        None
+dl_remove_postcondition_of_dl_remove_19_4_interpolation_4.smt2                  TIMEOUT                        601.04      559.21        None
+dl_reverse_invariant_18_2_interpolation_2.smt2                                  done                           280.63      253.82        None
+dl_reverse_invariant_18_2_interpolation_3.smt2                                  TIMEOUT                        600.47      571.60        None
+dl_reverse_invariant_18_2_interpolation_4.smt2                                  done                            97.02       69.78        None
+dl_reverse_invariant_18_2_interpolation_5.smt2                                  TIMEOUT                        600.40      571.52        None
+dl_reverse_loop_check_heap_access_25_4_interpolation_1.smt2                     done                           111.97       94.12        None
+dl_reverse_loop_check_heap_access_25_4_interpolation_5.smt2                     TIMEOUT                        600.45      572.59        None
+dl_reverse_loop_check_heap_access_27_4_interpolation_2.smt2                     done                            39.33       23.25        None
+dl_traverse_invariant_18_2_interpolation_1.smt2                                 TIMEOUT                        600.47      562.43        None
+dl_traverse_loop_check_heap_access_22_4_interpolation_5.smt2                    done                           153.76      129.17        None
+dl_traverse_postcondition_of_dl_traverse_24_1_interpolation_1.smt2              TIMEOUT                        600.40      563.93        None
+dl_traverse_postcondition_of_dl_traverse_24_1_interpolation_2.smt2              TIMEOUT                        600.89      561.74        None
+dl_traverse_postcondition_of_dl_traverse_24_1_interpolation_3.smt2              TIMEOUT                        600.92      568.41        None
+dl_traverse_postcondition_of_dl_traverse_24_1_interpolation_4.smt2              TIMEOUT                        600.50      569.52        None
+filter_invariant_17_2_interpolation_3.smt2                                      done                           579.63      551.36        None
+filter_loop_check_free_31_6_interpolation_1.smt2                                done                            78.02       54.16        None
+filter_loop_check_free_31_6_interpolation_2.smt2                                done                            83.46       64.72        None
+filter_loop_check_free_31_6_interpolation_4.smt2                                done                            94.81       70.02        None
+filter_loop_check_free_31_6_interpolation_5.smt2                                done                           201.82      175.87        None
+filter_loop_check_heap_access_23_4_interpolation_2.smt2                         done                            75.04       52.59        None
+filter_loop_check_heap_access_23_4_interpolation_3.smt2                         ERROR                          156.60      131.40        None
+filter_loop_check_heap_access_23_4_interpolation_4.smt2                         done                            78.75       59.93        None
+filter_loop_check_heap_access_23_4_interpolation_5.smt2                         ERROR                           61.75       39.79        None
+filter_loop_check_heap_access_27_8_interpolation_4.smt2                         ERROR                           74.93       58.38        None
+find_check_heap_access_20_4_interpolation_1.smt2                                TIMEOUT                        600.79      558.74        None
+find_check_heap_access_20_4_interpolation_2.smt2                                TIMEOUT                        600.34      559.30        None
+find_check_heap_access_20_4_interpolation_3.smt2                                TIMEOUT                        600.33      561.89        None
+find_check_heap_access_20_4_interpolation_4.smt2                                TIMEOUT                        600.46      563.69        None
+find_check_heap_access_20_4_interpolation_5.smt2                                TIMEOUT                        600.27      563.73        None
+find_last_postcondition_of_find_last_18_4_interpolation_1.smt2                  done                           320.04      281.64        None
+find_last_postcondition_of_find_last_18_4_interpolation_2.smt2                  done                           279.57      244.89        None
+find_last_postcondition_of_find_last_18_4_interpolation_3.smt2                  done                           353.69      316.93        None
+find_last_postcondition_of_find_last_18_4_interpolation_5.smt2                  done                           514.00      475.07        None
+find_last_postcondition_of_find_last_20_4_interpolation_2.smt2                  ERROR                           82.72       54.38        None
+find_last_postcondition_of_find_last_20_4_interpolation_3.smt2                  ERROR                          125.57       89.41        None
+find_last_postcondition_of_find_last_20_4_interpolation_4.smt2                  ERROR                          239.91      203.58        None
+find_last_postcondition_of_find_last_20_4_interpolation_5.smt2                  done                           287.00      252.81        None
+find_last_precondition_of_find_last_17_10_interpolation_1.smt2                  done                            78.96       62.78        None
+find_last_precondition_of_find_last_17_10_interpolation_3.smt2                  done                           168.50      147.11        None
+find_last_precondition_of_find_last_17_10_interpolation_5.smt2                  TIMEOUT                        600.41      574.19        None
+find_precondition_of_find_19_11_interpolation_1.smt2                            TIMEOUT                        600.54      562.71        None
+find_precondition_of_find_19_11_interpolation_2.smt2                            TIMEOUT                        600.23      565.94        None
+find_precondition_of_find_19_11_interpolation_3.smt2                            done                           164.83      131.23        None
+find_precondition_of_find_19_11_interpolation_4.smt2                            TIMEOUT                        600.50      562.24        None
+find_precondition_of_find_19_11_interpolation_5.smt2                            TIMEOUT                        600.49      563.74        None
+insert_check_heap_access_25_4_1_interpolation_1.smt2                            TIMEOUT                        600.92      556.90        None
+insert_check_heap_access_25_4_1_interpolation_2.smt2                            TIMEOUT                        600.65      562.69        None
+insert_check_heap_access_25_4_1_interpolation_3.smt2                            done                           315.69      280.05        None
+insert_check_heap_access_25_4_1_interpolation_4.smt2                            TIMEOUT                        601.01      557.86        None
+insert_check_heap_access_25_4_1_interpolation_5.smt2                            TIMEOUT                        601.03      554.69        None
+insert_check_heap_access_25_4_interpolation_1.smt2                              done                           209.52      183.45        None
+insert_check_heap_access_25_4_interpolation_2.smt2                              TIMEOUT                        600.58      570.85        None
+insert_check_heap_access_25_4_interpolation_3.smt2                              done                           240.89      207.33        None
+insert_check_heap_access_25_4_interpolation_4.smt2                              TIMEOUT                        600.38      572.44        None
+insert_check_heap_access_25_4_interpolation_5.smt2                              TIMEOUT                        600.12      563.59        None
+insert_check_heap_access_26_4_interpolation_1.smt2                              TIMEOUT                        600.25      564.99        None
+insert_check_heap_access_26_4_interpolation_2.smt2                              TIMEOUT                        600.57      559.22        None
+insert_check_heap_access_26_4_interpolation_3.smt2                              TIMEOUT                        600.93      559.10        None
+insert_check_heap_access_26_4_interpolation_4.smt2                              done                           512.82      470.49        None
+insert_check_heap_access_26_4_interpolation_5.smt2                              TIMEOUT                        600.70      555.05        None
+insert_invariant_19_4_interpolation_4.smt2                                      ERROR                           66.55       39.06        None
+insert_invariant_19_4_interpolation_5.smt2                                      ERROR                          571.70      533.07        None
+insert_postcondition_of_insert_14_4_interpolation_1.smt2                        ERROR                          378.25      345.69        None
+insert_postcondition_of_insert_14_4_interpolation_2.smt2                        ERROR                          193.85      163.53        None
+insert_postcondition_of_insert_14_4_interpolation_5.smt2                        ERROR                          446.89      411.96        None
+pull_strands_check_heap_access_77_2_interpolation_1.smt2                        done                             6.88        2.65        None
+rec_concat_postcondition_of_rec_concat_31_1_interpolation_1.smt2                TIMEOUT                        600.69      560.15        None
+rec_concat_postcondition_of_rec_concat_31_1_interpolation_2.smt2                TIMEOUT                        600.69      566.71        None
+rec_concat_postcondition_of_rec_concat_31_1_interpolation_3.smt2                TIMEOUT                        601.11      556.06        None
+rec_concat_postcondition_of_rec_concat_31_1_interpolation_4.smt2                TIMEOUT                        600.68      556.06        None
+rec_concat_postcondition_of_rec_concat_31_1_interpolation_5.smt2                TIMEOUT                        600.78      558.31        None
+rec_copy_loop_check_heap_access_44_4_interpolation_3.smt2                       done                            61.05       44.68        None
+rec_copy_loop_check_heap_access_44_4_interpolation_4.smt2                       done                            19.22        8.56        None
+rec_copy_loop_postcondition_of_rec_copy_loop_38_4_interpolation_1.smt2          TIMEOUT                        600.59      566.86        None
+rec_copy_loop_postcondition_of_rec_copy_loop_38_4_interpolation_2.smt2          TIMEOUT                        600.34      559.02        None
+rec_copy_loop_postcondition_of_rec_copy_loop_38_4_interpolation_3.smt2          TIMEOUT                        600.38      567.94        None
+rec_copy_loop_postcondition_of_rec_copy_loop_38_4_interpolation_4.smt2          TIMEOUT                        600.12      564.35        None
+rec_copy_loop_postcondition_of_rec_copy_loop_38_4_interpolation_5.smt2          TIMEOUT                        600.56      559.01        None
+rec_copy_postcondition_of_rec_copy_53_2_interpolation_1.smt2                    done                           581.38      538.74        None
+rec_copy_postcondition_of_rec_copy_53_2_interpolation_2.smt2                    TIMEOUT                        600.40      567.83        None
+rec_copy_postcondition_of_rec_copy_53_2_interpolation_3.smt2                    TIMEOUT                        600.84      567.29        None
+rec_copy_postcondition_of_rec_copy_53_2_interpolation_5.smt2                    TIMEOUT                        600.56      568.57        None
+rec_copy_precondition_of_rec_copy_loop_53_9_interpolation_3.smt2                ERROR                          265.82      238.30        None
+rec_dispose_postcondition_of_rec_dispose_17_19_interpolation_1.smt2             TIMEOUT                        600.35      563.16        None
+rec_dispose_postcondition_of_rec_dispose_17_19_interpolation_2.smt2             done                           366.90      333.78        None
+rec_dispose_postcondition_of_rec_dispose_17_19_interpolation_3.smt2             TIMEOUT                        600.27      564.84        None
+rec_dispose_postcondition_of_rec_dispose_17_19_interpolation_4.smt2             done                           162.65      133.42        None
+rec_dispose_postcondition_of_rec_dispose_17_19_interpolation_5.smt2             TIMEOUT                        600.76      557.55        None
+rec_dispose_precondition_of_rec_dispose_17_4_interpolation_1.smt2               done                           100.94       72.39        None
+rec_dispose_precondition_of_rec_dispose_17_4_interpolation_2.smt2               TIMEOUT                        600.38      567.86        None
+rec_dispose_precondition_of_rec_dispose_17_4_interpolation_3.smt2               done                           184.59      154.82        None
+rec_dispose_precondition_of_rec_dispose_17_4_interpolation_4.smt2               ERROR                          475.01      439.96        None
+rec_dispose_precondition_of_rec_dispose_17_4_interpolation_5.smt2               ERROR                          132.76      105.80        None
+rec_filter_precondition_of_rec_filter_18_10_interpolation_5.smt2                ERROR                          128.48      106.20        None
+rec_filter_precondition_of_rec_filter_24_11_interpolation_1.smt2                ERROR                          152.81      121.43        None
+rec_filter_precondition_of_rec_filter_24_11_interpolation_2.smt2                ERROR                           86.20       62.74        None
+rec_filter_precondition_of_rec_filter_24_11_interpolation_4.smt2                ERROR                          450.43      419.58        None
+rec_filter_precondition_of_rec_filter_24_11_interpolation_5.smt2                ERROR                           79.50       57.33        None
+rec_insert_check_heap_access_24_6_interpolation_1.smt2                          TIMEOUT                        600.84      564.70        None
+rec_insert_check_heap_access_24_6_interpolation_2.smt2                          TIMEOUT                        600.27      561.75        None
+rec_insert_check_heap_access_24_6_interpolation_3.smt2                          TIMEOUT                        600.47      559.11        None
+rec_insert_check_heap_access_24_6_interpolation_4.smt2                          TIMEOUT                        601.01      560.40        None
+rec_insert_check_heap_access_24_6_interpolation_5.smt2                          TIMEOUT                        600.67      564.62        None
+rec_insert_postcondition_of_rec_insert_14_4_interpolation_3.smt2                TIMEOUT                        600.33      559.39        None
+rec_insert_postcondition_of_rec_insert_14_4_interpolation_4.smt2                ERROR                          219.55      186.64        None
+rec_insert_postcondition_of_rec_insert_14_4_interpolation_5.smt2                ERROR                          182.81      152.04        None
+rec_insert_postcondition_of_rec_insert_19_6_interpolation_1.smt2                ERROR                          583.85      543.10        None
+rec_insert_postcondition_of_rec_insert_19_6_interpolation_2.smt2                ERROR                          301.94      269.98        None
+rec_insert_postcondition_of_rec_insert_19_6_interpolation_4.smt2                ERROR                          194.77      161.33        None
+rec_insert_postcondition_of_rec_insert_19_6_interpolation_5.smt2                TIMEOUT                        600.21      550.08        None
+rec_insert_precondition_of_rec_insert_23_12_interpolation_1.smt2                ERROR                          206.37      173.27        None
+rec_insert_precondition_of_rec_insert_23_12_interpolation_2.smt2                TIMEOUT                        600.75      561.63        None
+rec_insert_precondition_of_rec_insert_23_12_interpolation_3.smt2                TIMEOUT                        600.25      562.08        None
+rec_insert_precondition_of_rec_insert_23_12_interpolation_4.smt2                TIMEOUT                        600.32      569.05        None
+rec_insert_precondition_of_rec_insert_23_12_interpolation_5.smt2                TIMEOUT                        600.58      561.40        None
+rec_remove_postcondition_of_rec_remove_20_4_interpolation_1.smt2                ERROR                          370.18      332.61        None
+rec_remove_postcondition_of_rec_remove_20_4_interpolation_2.smt2                TIMEOUT                        600.38      563.92        None
+rec_remove_postcondition_of_rec_remove_20_4_interpolation_3.smt2                TIMEOUT                        600.72      563.19        None
+rec_remove_postcondition_of_rec_remove_20_4_interpolation_4.smt2                TIMEOUT                        600.63      558.19        None
+rec_remove_postcondition_of_rec_remove_20_4_interpolation_5.smt2                ERROR                          275.57      244.96        None
+rec_remove_precondition_of_rec_remove_24_10_interpolation_4.smt2                ERROR                           70.31       49.29        None
+rec_reverse_loop_postcondition_of_rec_reverse_loop_15_4_interpolation_4.smt2    ERROR                           49.55       24.37        None
+rec_reverse_postcondition_of_rec_reverse_27_2_interpolation_1.smt2              TIMEOUT                        600.36      563.60        None
+rec_reverse_postcondition_of_rec_reverse_27_2_interpolation_2.smt2              TIMEOUT                        600.87      564.20        None
+rec_reverse_postcondition_of_rec_reverse_27_2_interpolation_3.smt2              done                           432.05      396.57        None
+rec_reverse_postcondition_of_rec_reverse_27_2_interpolation_4.smt2              TIMEOUT                        600.91      564.41        None
+rec_reverse_postcondition_of_rec_reverse_27_2_interpolation_5.smt2              TIMEOUT                        600.77      556.75        None
+rec_reverse_postcondition_of_rec_reverse_29_2_interpolation_1.smt2              TIMEOUT                        600.34      561.34        None
+rec_reverse_postcondition_of_rec_reverse_29_2_interpolation_3.smt2              TIMEOUT                        600.44      573.44        None
+rec_reverse_postcondition_of_rec_reverse_29_2_interpolation_4.smt2              TIMEOUT                        600.91      566.62        None
+rec_reverse_postcondition_of_rec_reverse_29_2_interpolation_5.smt2              TIMEOUT                        600.78      565.87        None
+rec_reverse_precondition_of_rec_reverse_loop_29_9_interpolation_2.smt2          ERROR                           12.24        4.15        None
+rec_traverse_postcondition_of_rec_traverse_16_20_interpolation_2.smt2           ERROR (1)                      141.61      122.48        None
+rec_traverse_postcondition_of_rec_traverse_16_20_interpolation_4.smt2           done                           599.01      565.31        None
+rec_traverse_precondition_of_rec_traverse_16_4_interpolation_2.smt2             ERROR                           92.30       72.95        None
+remove_check_free_31_6_interpolation_1.smt2                                     done                           180.55      157.95        None
+remove_check_free_31_6_interpolation_3.smt2                                     done                           419.36      392.45        None
+remove_check_free_31_6_interpolation_4.smt2                                     done                           213.95      193.35        None
+remove_check_free_31_6_interpolation_5.smt2                                     done                           219.21      195.48        None
+remove_check_heap_access_27_4_interpolation_1.smt2                              done                           149.93      117.87        None
+remove_check_heap_access_27_4_interpolation_2.smt2                              done                           193.00      163.04        None
+remove_check_heap_access_27_4_interpolation_3.smt2                              TIMEOUT                        600.18      562.76        None
+remove_check_heap_access_27_4_interpolation_4.smt2                              TIMEOUT                        600.89      564.38        None
+remove_check_heap_access_30_6_1_interpolation_1.smt2                            done                           127.53       96.21        None
+remove_check_heap_access_30_6_1_interpolation_2.smt2                            done                           151.52      124.14        None
+remove_check_heap_access_30_6_1_interpolation_3.smt2                            done                           156.96      124.03        None
+remove_check_heap_access_30_6_1_interpolation_4.smt2                            done                           131.87      106.01        None
+remove_check_heap_access_30_6_1_interpolation_5.smt2                            done                           179.05      149.36        None
+remove_check_heap_access_30_6_interpolation_3.smt2                              done                           215.35      193.91        None
+remove_postcondition_of_remove_33_4_interpolation_2.smt2                        done                           456.78      411.96        None
+remove_postcondition_of_remove_33_4_interpolation_3.smt2                        TIMEOUT                        600.18      553.40        None
+remove_postcondition_of_remove_33_4_interpolation_4.smt2                        TIMEOUT                        600.32      550.46        None
+remove_postcondition_of_remove_33_4_interpolation_5.smt2                        done                           353.28      312.18        None
+---------------------------------------------------------------------------------------------------------------------------------------------
+Run set 1                                                                       done                        108104.62    12668.55           -
+
+Statistics:            266 Files
+  correct:               0
+    correct true:        0
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:             169
