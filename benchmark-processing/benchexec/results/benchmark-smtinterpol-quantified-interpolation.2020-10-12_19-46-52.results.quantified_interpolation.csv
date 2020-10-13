@@ -1,0 +1,13 @@
+tool	SMTInterpol 2.5-801-g09896928	SMTInterpol 2.5-801-g09896928	SMTInterpol 2.5-801-g09896928	SMTInterpol 2.5-801-g09896928
+run set	quantified_interpolation	quantified_interpolation	quantified_interpolation	quantified_interpolation
+../../SMTInterpolTest/test/quantified-interpolation/benchmark/	status	cputime (s)	walltime (s)	memory (MB)
+dl_filter_invariant_19_2_interpolation_5.smt2	done	19081.261054837	18288.086586293997	2515.222528
+dl_filter_loop_check_heap_access_32_8_interpolation_2.smt2	done	11935.221021055	11632.226364156988	1681.5882239999999
+dl_insert_check_heap_access_31_4_interpolation_1.smt2	done	26490.517841871	24752.28053417604	3389.595648
+dl_insert_check_heap_access_31_4_interpolation_2.smt2				
+dl_insert_check_heap_access_31_4_interpolation_3.smt2	done	10884.650906002	10507.40123811498	2169.217024
+dl_insert_check_heap_access_31_4_interpolation_4.smt2	done	16067.563231465	15607.414811774972	1691.2588799999999
+dl_insert_check_heap_access_31_4_interpolation_5.smt2	done	7673.490884856	7359.967865498969	2209.1530239999997
+dl_insert_check_heap_access_32_4_interpolation_1.smt2				
+dl_insert_check_heap_access_32_4_interpolation_2.smt2				
+dl_insert_check_heap_access_32_4_interpolation_3.smt2				
