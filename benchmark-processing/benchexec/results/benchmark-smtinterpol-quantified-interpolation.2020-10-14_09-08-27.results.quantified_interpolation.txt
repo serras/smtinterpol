@@ -1,0 +1,62 @@
+   BENCHMARK INFORMATION
+SMTInterpol
+benchmark definition:    benchmark-smtinterpol-quantified-interpolation.xml
+name:                    benchmark-smtinterpol-quantified-interpolation
+run sets:                quantified_interpolation
+date:                    Wed, 2020-10-14 09:08:27 CEST
+tool:                    SMTInterpol 2.5-801-g09896928
+tool executable:         /usr/bin/java
+options:                 
+parallel runs:           8
+resource limits:
+hardware requirements:
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    ubuntu-desktop-e
+os:                      Linux-5.3.0-64-generic-x86_64-with-Ubuntu-19.10-eoan
+cpu:                     AMD Ryzen 5 2600X Six-Core Processor
+- cores:                 12
+- max frequency:         3600.0 MHz
+- turbo boost enabled:   True
+ram:                     16801.513472 MB
+------------------------------------------------------------
+
+
+
+quantified_interpolation
+Run set 1 of 1 with options '' and propertyfile 'None'
+
+inputfile                                                                 status                       cpu time   wall time        host
+---------------------------------------------------------------------------------------------------------------------------------------
+dl_remove_check_heap_access_40_6_1_interpolation_2.smt2                   done                         43876.88    42771.13        None
+dl_reverse_invariant_18_2_interpolation_5.smt2                            done                         10086.88     9805.70        None
+dl_traverse_invariant_18_2_interpolation_3.smt2                           done                         10535.45    10256.50        None
+dl_traverse_postcondition_of_dl_traverse_24_1_interpolation_1.smt2        done                         22449.18    21823.42        None
+dl_traverse_postcondition_of_dl_traverse_24_1_interpolation_2.smt2        
+dl_traverse_postcondition_of_dl_traverse_24_1_interpolation_3.smt2        ERROR (1)                    18067.95    17042.91        None
+dl_traverse_postcondition_of_dl_traverse_24_1_interpolation_4.smt2        
+find_check_heap_access_20_4_interpolation_1.smt2                          done                         14359.69    13871.25        None
+find_check_heap_access_20_4_interpolation_2.smt2                          done                         14300.01    13343.40        None
+find_precondition_of_find_19_11_interpolation_2.smt2                      ERROR                        11761.77    11439.45        None
+insert_check_heap_access_26_4_interpolation_1.smt2                        done                         20006.43    19474.88        None
+insert_check_heap_access_26_4_interpolation_3.smt2                        
+insert_check_heap_access_26_4_interpolation_5.smt2                        done                         16203.50    15777.50        None
+rec_concat_postcondition_of_rec_concat_31_1_interpolation_1.smt2          done                         17213.25    16720.41        None
+rec_concat_postcondition_of_rec_concat_31_1_interpolation_2.smt2          done                         44937.40    43712.41        None
+rec_concat_postcondition_of_rec_concat_31_1_interpolation_3.smt2          ERROR                        23947.04    23281.98        None
+rec_concat_postcondition_of_rec_concat_31_1_interpolation_4.smt2          done                         26247.73    25580.66        None
+rec_concat_postcondition_of_rec_concat_31_1_interpolation_5.smt2          
+rec_copy_loop_postcondition_of_rec_copy_loop_38_4_interpolation_1.smt2    
+rec_copy_loop_postcondition_of_rec_copy_loop_38_4_interpolation_2.smt2    
+---------------------------------------------------------------------------------------------------------------------------------------
+Run set 1                                                                 done                        673328.13    85194.17           -
+
+Statistics:             14 Files
+  correct:               0
+    correct true:        0
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               3
