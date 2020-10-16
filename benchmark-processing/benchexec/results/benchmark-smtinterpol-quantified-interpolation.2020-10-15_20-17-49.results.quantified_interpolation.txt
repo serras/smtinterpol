@@ -1,0 +1,35 @@
+   BENCHMARK INFORMATION
+SMTInterpol
+benchmark definition:    benchmark-smtinterpol-quantified-interpolation.xml
+name:                    benchmark-smtinterpol-quantified-interpolation
+run sets:                quantified_interpolation
+date:                    Thu, 2020-10-15 20:17:49 CEST
+tool:                    SMTInterpol 2.5-801-g09896928
+tool executable:         /usr/bin/java
+options:                 
+parallel runs:           8
+resource limits:
+hardware requirements:
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    ubuntu-desktop-e
+os:                      Linux-5.3.0-64-generic-x86_64-with-Ubuntu-19.10-eoan
+cpu:                     AMD Ryzen 5 2600X Six-Core Processor
+- cores:                 12
+- max frequency:         3600.0 MHz
+- turbo boost enabled:   True
+ram:                     16801.513472 MB
+------------------------------------------------------------
+
+
+
+quantified_interpolation
+Run set 1 of 1 with options '' and propertyfile 'None'
+
+inputfile                                                                 status                       cpu time   wall time        host
+---------------------------------------------------------------------------------------------------------------------------------------
+dl_insert_check_heap_access_38_4_interpolation_3.smt2                     done                          9491.36     9127.46        None
+dl_insert_postcondition_of_dl_insert_17_4_interpolation_3.smt2            KILLED BY SIGNAL 9           14230.44    13581.64        None
+dl_insert_check_heap_access_38_4_interpolation_5.smt2                     done                         23886.77    22765.70        None
+dl_remove_check_free_49_4_interpolation_3.smt2                            KILLED BY SIGNAL 9           28613.99    27676.32        None
