@@ -340,9 +340,9 @@ public class Interpolator extends NonRecursive {
 			mLogger.debug(interpolants[i]);
 		}
 
-		if (Config.DEEP_CHECK_INTERPOLANTS && mChecker != null) {
-			mChecker.checkInductivity(leafTermInfo.getLiterals(), interpolants);
-		}
+		//if (Config.DEEP_CHECK_INTERPOLANTS && mChecker != null) {
+			//mChecker.checkInductivity(leafTermInfo.getLiterals(), interpolants);
+		//}
 	}
 
 	/**
@@ -415,9 +415,9 @@ public class Interpolator extends NonRecursive {
 		// Add quantifiers if necessary. TODO: Is there a better place to do this?
 		interpolants = addQuantifier(interpolants, proofTermInfo.getLiterals());
 
-		if (Config.DEEP_CHECK_INTERPOLANTS && mChecker != null) {
-			mChecker.checkInductivity(proofTermInfo.getLiterals(), interpolants);
-		}
+		//if (Config.DEEP_CHECK_INTERPOLANTS && mChecker != null) {
+		//	mChecker.checkInductivity(proofTermInfo.getLiterals(), interpolants);
+		//}
 
 		mInterpolants.put(proofTerm, interpolants);
 		mLogger.debug("...which is the resulting interpolant for Term %s ", proofTerm.hashCode());

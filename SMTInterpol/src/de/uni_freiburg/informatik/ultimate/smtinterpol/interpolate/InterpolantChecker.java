@@ -143,7 +143,7 @@ public class InterpolantChecker {
 		final LogProxy logger = mInterpolator.getLogger();
 		final Theory theory = mInterpolator.mTheory;
 		final int old = logger.getLoglevel();// NOPMD
-		logger.setLoglevel(LogProxy.LOGLEVEL_INFO);
+		logger.setLoglevel(LogProxy.LOGLEVEL_DEBUG);
 
 		mCheckingSolver.push(1);
 
