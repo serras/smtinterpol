@@ -1,7 +1,0 @@
-DEBUG - Got Quantifier in Assertion Stack as reason to return unknown:
-
-rec_traverse_postcondition_of_rec_traverse_16_20_interpolation_2.smt2
-dl_filter_loop_check_heap_access_32_8_interpolation_3.smt2
-dl_dispose_postcondition_of_dl_dispose_24_1_interpolation_3.smt2
-dl_dispose_loop_check_heap_access_21_4_interpolation_3.smt2
-concat_invariant_18_4_interpolation_1.smt2

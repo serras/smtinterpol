@@ -1,5 +1,0 @@
-kein Fehler + valide Interpolante, wenn DeepCheck in summarize auskommentiert:
-
-dl_traverse_postcondition_of_dl_traverse_24_1_interpolation_3.smt2:
-dl_traverse_loop_check_heap_access_22_4_interpolation_1.smt2
-dl_copy_loop_check_heap_access_29_4_interpolation_3.smt2
